@@ -24,19 +24,19 @@ main {
 .step-box:last-child {
   margin-right: 0px;
 }
-.step-image1 {
+.step-img1 {
   height: 150px;
   background-image: url(img/flow01.png);
   background-size: cover;
   background-position: bottom;
 }
-.step-image2 {
+.step-img2 {
   height: 150px;
   background-image: url(img/flow02.png);
   background-size: cover;
   background-position: bottom;
 }
-.step-image3 {
+.step-img3 {
   height: 150px;
   background-image: url(img/flow03.png);
   background-size: cover;
@@ -57,4 +57,45 @@ footer {
   height: 50px;
   background-color: #aaaaaa;
   margin-top: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  main:last-child {
+    margin-bottom: 0;
+  }
+  .step-box {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .step-box:last-child {
+    margin: auto;
+    margin-bottom: 0;
+  }
+  .step-img1 {
+    background-image: url(img/flow01.png);
+    background-size: cover;
+    background-position: bottom;
+    height: 150px;
+    width: 100%;
+  }
+  .step-img2 {
+    background-image: url(img/flow02.png);
+    background-size: cover;
+    background-position: bottom;
+    height: 150px;
+    width: 100%;
+  }
+  .step-img3 {
+    background-image: url(img/flow03.png);
+    background-size: cover;
+    background-position: bottom;
+    height: 150px;
+    width: 100%;
+  }
 }
